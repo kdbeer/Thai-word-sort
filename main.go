@@ -58,12 +58,13 @@ func testByWords() {
 	testData := []string{
 		"กกกกกกกกกงงงงง2",
 		"กกกกกกกกกงงงงง1",
-		"ร้านขายของ",
+		"แต้วเอง",
 		"ทดสอบร้าน3",
 		"ทดสอบร้าน0",
 		"ร้าน After brown 3",
 		"ร้าน After brown 1",
 		"ร้าน After brown 2",
+		"ร้านบราวนี่1",
 	}
 	words := []Word{}
 	for _, k := range testData {
