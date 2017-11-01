@@ -14,21 +14,10 @@ type Word struct {
 }
 
 type ByWeight []Word
-type ByLength []string
 
 func (a ByWeight) Len() int           { return len(a) }
 func (a ByWeight) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a ByWeight) Less(i, j int) bool { return a[i].Weight < a[j].Weight }
-
-func (s ByLength) Len() int {
-	return len(s)
-}
-func (s ByLength) Swap(i, j int) {
-	s[i], s[j] = s[j], s[i]
-}
-func (s ByLength) Less(i, j int) bool {
-	return len(s[i]) < len(s[j])
-}
 
 func main() {
 	Alphabet = InitData()
