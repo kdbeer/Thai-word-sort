@@ -22,25 +22,7 @@ func (a ByWeight) Less(i, j int) bool { return a[i].Weight < a[j].Weight }
 func main() {
 	Alphabet = InitData()
 	testByWords()
-	//testCompare()
-	//CalculateSortWeight("คุณเอ๋")
 
-}
-
-func testCompare() {
-	testData := []string{
-		"บ บ บ  raw develop",
-		"คุณแอน",
-	}
-	words := []Word{}
-	for _, k := range testData {
-		cmpValue := CalculateSortWeight(k)
-		words = append(words, Word{k, cmpValue})
-	}
-	sort.Sort(ByWeight(words))
-	for _, k := range words {
-		fmt.Println(k.Text, "\t", k.Weight)
-	}
 }
 
 func testByWords() {
