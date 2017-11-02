@@ -79,6 +79,30 @@ func CalculateSortWeight(text string) string {
 }
 
 func InitData() map[string]float64 {
+	Alphabet := make(map[string]float64)
+	Alphabet["เ"] = 5
+	Alphabet["แ"] = 6
+	Alphabet["โ"] = 7
+	Alphabet["ใ"] = 8
+	Alphabet["ไ"] = 9
+	Alphabet["ะ"] = 10
+	Alphabet["ั"] = 11
+	Alphabet["า"] = 12
+	Alphabet["ำ"] = 13
+	Alphabet["ิ"] = 14
+	Alphabet["ี"] = 15
+	Alphabet["ึ"] = 16
+	Alphabet["ื"] = 17
+	Alphabet["ุ"] = 18
+	Alphabet["ู"] = 19
+
+	Alphabet["็"] = 20
+	Alphabet["์"] = 21
+	Alphabet["่"] = 22
+	Alphabet["้"] = 23
+	Alphabet["๊"] = 24
+	Alphabet["๋"] = 25
+
 	Alphabet["ก"] = 1000
 	Alphabet["ข"] = 1030
 	Alphabet["ฃ"] = 1060
