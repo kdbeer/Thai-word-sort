@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"testing"
 )
 
 func main() {
@@ -59,8 +58,8 @@ func main() {
 	}
 
 	fmt.Println()
-	characters := 91
-	for i := 0; i < 15; i++ {
+	characters := 32
+	for i := 0; i < 16; i++ {
 		fmt.Println("Alphabet[\"", string(characters+i), "\"]=", val)
 		val += step
 	}
@@ -74,9 +73,17 @@ func main() {
 
 	fmt.Println()
 	characters = 91
-	for i := 0; i < 7; i++ {
+	for i := 0; i < 6; i++ {
 		fmt.Println("Alphabet[\"", string(characters+i), "\"]=", val)
 		val += step
 	}
+
+	fmt.Println()
+	characters = 123
+	for i := 0; i < 4; i++ {
+		fmt.Println("Alphabet[\"", string(characters+i), "\"]=", val)
+		val += step
+	}
+
 
 }
